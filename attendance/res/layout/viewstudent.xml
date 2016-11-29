@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/greybackground" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+   	<LinearLayout
+   	    android:layout_width="match_parent"
+   	    android:layout_height="285dp"
+   	    android:orientation="vertical" >
+   	    	
+    <TextView
+        android:id="@+id/tvView"
+        android:textColor="#000000"
+        android:layout_width="match_parent"
+        android:layout_height="371dp"
+        android:textSize="20dp"
+        android:text="MediumText" />
+	</LinearLayout>
+     </ScrollView>
+
+    <Button
+        android:id="@+id/bDebarred"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/scrollView1"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="50dp"
+        android:background="@drawable/deb" />
+
+    <Button
+        android:id="@+id/bavg"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/bDebarred"
+        android:layout_alignBottom="@+id/bDebarred"
+        android:layout_marginLeft="46dp"
+        android:layout_toRightOf="@+id/bDebarred"
+        android:text="Average" />
+    
+</RelativeLayout>

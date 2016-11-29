@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/db"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/greybackground" >
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/editText1"
+        android:layout_below="@+id/editText1"
+        android:layout_marginTop="20dp"
+        android:background="#f3f3f3"
+        android:ems="10"
+        android:hint="registration Number"
+        android:textColor="#000000"
+        android:paddingLeft="5dp" />
+
+    <EditText
+        android:id="@+id/etAttend"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/editText2"
+        android:layout_marginTop="31dp"
+        android:background="#f3f3f3"
+        android:ems="10"
+        android:hint="Attended Classes"
+        android:textColor="#000000"
+        android:paddingLeft="5dp" >    
+
+       
+    </EditText>
+
+     <EditText
+         android:id="@+id/etTotal"
+         android:layout_width="fill_parent"
+         android:layout_height="40dp"
+         android:layout_alignLeft="@+id/etAttend"
+         android:layout_below="@+id/etAttend"
+         android:layout_marginTop="25dp"
+         android:background="#f3f3f3"
+         android:ems="10"
+         android:hint="Total Classes"
+         android:textColor="#000000"
+         android:paddingLeft="5dp" />
+
+       <Button
+           android:id="@+id/button2"
+           android:layout_width="190dp"
+           android:layout_height="38dp"
+           android:layout_above="@+id/button3"
+           android:layout_alignLeft="@+id/button1"
+           android:layout_marginBottom="18dp"
+           android:background="#2683c2"
+           android:text="View"
+           android:textColor="#fff"
+           android:textSize="13dp" />
+
+       <Button
+           android:id="@+id/button1"
+           android:layout_width="190dp"
+           android:layout_height="38dp"
+           android:layout_above="@+id/button2"
+           android:layout_centerHorizontal="true"
+           android:layout_marginBottom="20dp"
+           android:background="#13b586"
+           android:text="ADD"
+           android:textColor="#fff"
+           android:textSize="13dp" />
+
+       <EditText
+           android:id="@+id/editText1"
+           android:layout_width="fill_parent"
+           android:layout_height="40dp"
+           android:layout_alignLeft="@+id/etAttend"
+           android:layout_alignParentTop="true"
+           android:background="#f3f3f3"
+           android:ems="10"
+           android:hint="Name"
+           android:paddingLeft="5dp"
+           android:textColor="#000000" />
+
+       <EditText
+           android:id="@+id/EditText01"
+           android:layout_width="fill_parent"
+           android:layout_height="40dp"
+           android:layout_alignParentRight="true"
+           android:layout_below="@+id/etTotal"
+           android:layout_marginTop="26dp"
+           android:background="#f3f3f3"
+           android:ems="10"
+           android:hint="Internal Marks"
+           android:paddingLeft="5dp"
+           android:textColor="#000000" >
+
+           <requestFocus />
+       </EditText>
+
+       <Button
+           android:id="@+id/button3"
+           android:layout_width="190dp"
+           android:layout_height="38dp"
+           android:layout_alignLeft="@+id/button2"
+           android:layout_alignParentBottom="true"
+           android:background="#eb543b"
+           android:text="Delete"
+           android:textColor="#fff"
+           android:textSize="13dp" />
+      
+</RelativeLayout>

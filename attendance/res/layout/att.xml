@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android1="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#008080"
+    android:orientation="vertical"
+    android:id="@+id/at" >
+
+    <RadioGroup
+        android1:id="@+id/radioGroup1"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_alignParentLeft="true"
+        android1:layout_alignParentTop="true"
+        android1:layout_marginLeft="30dp"
+        android1:layout_marginTop="52dp"
+        android1:textColor="#fff" >
+
+        <RadioButton
+            android1:id="@+id/radio0"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"
+            android1:checked="true"
+            android1:text="13"
+            android1:textColor="#fff" />
+
+        <RadioButton
+            android1:id="@+id/radio1"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"
+            android1:text="12"
+            android1:textColor="#fff" />
+    </RadioGroup>
+
+    <TextView
+        android1:id="@+id/textView1"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_alignParentTop="true"
+        android1:layout_alignRight="@+id/radioGroup1"
+        android1:layout_marginTop="18dp"
+        android1:text="YEAR"
+        android1:textAppearance="?android:attr/textAppearanceMedium"
+        android1:textColor="#fff" />
+
+    <TextView
+        android1:id="@+id/textView2"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_alignLeft="@+id/textView1"
+        android1:layout_below="@+id/radioGroup1"
+        android1:layout_marginTop="28dp"
+        android1:text="BRANCH"
+        android1:textAppearance="?android:attr/textAppearanceMedium"
+        android1:textColor="#fff" />
+
+    <RadioGroup
+        android1:id="@+id/radioGroup2"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:textColor="#fff"
+        android1:layout_alignLeft="@+id/radioGroup1"
+        android1:layout_centerVertical="true" >
+
+        <RadioButton
+            android1:id="@+id/radio00"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"
+            android1:checked="true"
+            android1:textColor="#fff"
+            android1:text="BCE" />
+
+        <RadioButton
+            android1:id="@+id/radio01"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"
+            android1:textColor="#fff"
+            android1:text="BEE" />
+
+        <RadioButton
+            android1:id="@+id/radio02"
+            android1:layout_width="wrap_content"
+            android1:textColor="#fff"
+            android1:layout_height="wrap_content"
+            android1:text="BIT" />
+    </RadioGroup>
+
+    <TextView
+        android1:id="@+id/textView3"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_alignLeft="@+id/textView2"
+        android1:layout_below="@+id/radioGroup2"
+        android1:layout_marginTop="40dp"
+        android1:text=""
+        android1:textColor="#fff"
+        android1:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android1:id="@+id/textView4"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_alignBaseline="@+id/textView3"
+        android1:layout_alignBottom="@+id/textView3"
+        android1:layout_alignParentRight="true"
+        android1:layout_marginRight="30dp"
+        android1:text=""
+        android1:textColor="#fff"
+        android1:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android1:id="@+id/button1"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_alignLeft="@+id/textView3"
+        android1:layout_alignParentBottom="true"
+        android1:layout_marginBottom="34dp"
+        android1:textColor="#fff"
+        android1:text="SPEAK" />
+
+    <Button
+        android1:id="@+id/button2"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_alignBaseline="@+id/button1"
+        android1:layout_alignBottom="@+id/button1"
+        android1:layout_alignRight="@+id/textView4"
+        android1:textColor="#fff"
+        android1:text="ADD" />
+
+    <Button
+        android1:id="@+id/button3"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_alignRight="@+id/textView4"
+        android1:layout_alignTop="@+id/textView1"
+        android1:textColor="#fff"
+        android1:text="Generate" />
+
+</RelativeLayout>
